@@ -108,18 +108,3 @@ npm run build
 ```
 
 Zephyr intercepts the build and deploys to its global edge network, generating a public URL instantly.
-
----
-
-## Features
-
-- ✅ Authentication (sign up & sign in via email)
-- ✅ Dashboard with monthly summary, charts, and budget alerts
-- ✅ Bar chart — spending over the last 6 months
-- ✅ Pie chart — breakdown by category
-- ✅ Full CRUD for transactions (create, edit, delete)
-- ✅ Filter transactions by month and category
-- ✅ Reports page — daily line chart, category bar chart, CSV export
-- ✅ Custom categories with name and color
-- ✅ Monthly budget per category with progress bar and alerts
-- ✅ Default categories: Food, Transport, Health, Entertainment, Housing, Others
