@@ -1,17 +1,17 @@
 import { lazy, Suspense } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAuth } from './context/AuthContext'
-import Login from './pages/Login'
-import Dashboard from './pages/Dashboard'
-import Transactions from './pages/Transactions'
-import Income from './pages/Income'
-import Budget from './pages/Budget'
-import Categories from './pages/Categories'
-import Layout from './components/Layout'
+import Login from './pages/login'
+import Dashboard from './pages/dashboard'
+import Transactions from './pages/transactions'
+import Income from './pages/income'
+import Budget from './pages/budget'
+import Categories from './pages/categories'
+import Layout from './components/layout'
 
 // Reports is loaded remotely from finance-tracker-reports via Module Federation.
 // Zephyr resolves the URL automatically at runtime.
-const RemoteReports = lazy(() => import('finance_tracker_reports/Reports'))
+const RemoteReports = lazy(() => import('finance_tracker_reports/reports'))
 
 function ReportsWrapper() {
   const { user } = useAuth()
